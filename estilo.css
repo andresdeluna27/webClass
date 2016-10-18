@@ -1,0 +1,9 @@
+.borde{
+    border:solid 2px;
+    background: green;
+}
+.logout{
+	font-style:"arial" 100px;
+	font-weight:bolder;
+	color:green;
+}
