@@ -17,7 +17,7 @@
 	if($fila){
 		session_start();
 		$_SESSION['usuario'] = $login;
-		$_SESSION['intervalo']=1;
+		$_SESSION['intervalo']=10;
 		$_SESSION['inicio']=time();
 		header ("Location: datos.php");
 

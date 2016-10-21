@@ -12,7 +12,7 @@ header("location:accede.php");
 }
 $segundos=time();
 $tiempoTranscurrido=$segundos;
-$tiempo_maximo = $_SESSION['inicio']  + ( $_SESSION['intervalo'] * 10 ) ;
+$tiempo_maximo = $_SESSION['inicio']  + ( $_SESSION['intervalo'] * 60 ) ;
 if($tiempoTranscurrido > $tiempo_maximo){
 
 header('location: accede.php');
@@ -54,6 +54,8 @@ header("location:accede.php");
 }
 
 ?>
+<br>
+<a href="hacerPDF.php">generar PDF</a>
 <br>
 <a class="logout" href="logout.php">salir</a>
 </body>
