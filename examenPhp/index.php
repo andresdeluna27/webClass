@@ -1,0 +1,12 @@
+<html>
+<head>
+	<title>inicio</title>
+</head>
+<header>
+	<section>logo</section>
+	<a>login</a>
+</header>
+<body>
+	<section>imagen</section>
+</body>
+</html>
