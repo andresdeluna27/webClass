@@ -1,9 +1,9 @@
 <html>
     <head>
-        <title>Nuevo usuario</title>
+        <title>login</title>
     </head>
     <body>
-        <form method="post" action="insertaU.php">
+        <form method="post" action="validar.php">
             
             <?php
             	error_reporting(E_ALL);
@@ -19,20 +19,13 @@
                     die("servidor no disponible: ".$conexion->connect_error);
                 }
             ?>
-            <label for="nuevoUser">Usuario</label>
-            <input type="text" name="nuevoUser" id="nuevoUser">
+            <label for="User">Usuario</label>
+            <input type="text" name="User" id="User">
             <br>
             <label for="contra">Contraseña</label>
             <input type="password" name="contra" id="contra">
             <br>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-            <br>
-            <label for="correo">Correo Electronico</label>
-            <input type="text" id="correo" name="correo">
-		<input type="submit">
-            
-            
+            <input type="submit">
         </form>
     </body>
 </html>
