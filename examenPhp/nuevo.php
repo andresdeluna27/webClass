@@ -1,8 +1,14 @@
 <html>
     <head>
-        <title>Nuevo usuario</title>
+        <link rel="stylesheet" href="registrar.css">
+        <link rel="stylesheet" href="case.css">
+        <title>Registro</title>
     </head>
-    <body>
+    <header>
+        
+    </header>
+    <body class="bodyB">
+        <section class="sect">
         <form method="post" action="insertaU.php">
             
             <?php
@@ -19,20 +25,24 @@
                     die("servidor no disponible: ".$conexion->connect_error);
                 }
             ?>
-            <label for="nuevoUser">Usuario</label>
-            <input type="text" name="nuevoUser" id="nuevoUser">
+            <div>
+                <label for="nuevoUser">Usuario</label><br>
+                <label for="contra">Contraseña</label><br>
+                <label for="nombre">Nombre</label><br>
+                <label for="correo">Correo Electronico</label>
+            </div>
+            <div>
+                <input type="text" name="nuevoUser" id="nuevoUser" required><br>
+                <input type="password" name="contra" id="contra" required><br>
+                <input type="text" name="nombre" id="nombre" required><br>
+                <input type="text" id="correo" name="correo" required><br>
+            </div>
             <br>
-            <label for="contra">Contraseña</label>
-            <input type="password" name="contra" id="contra">
-            <br>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-            <br>
-            <label for="correo">Correo Electronico</label>
-            <input type="text" id="correo" name="correo">
-		<input type="submit">
+            
+		<input class="btnEn" type="submit">
             
             
         </form>
+        </section>
     </body>
 </html>

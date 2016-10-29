@@ -1,0 +1,33 @@
+.sect{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20%;
+    border: solid green;
+    height: auto;
+    text-align: center;
+    background: orange;
+}
+input{
+    float: right;
+    width: 60%;
+    display: inline-block;
+    position: relative;
+}
+label{
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+div{
+    width: 49%;
+    float: left;
+    line-height: 1.7;
+    text-align: left;
+    color: forestgreen;
+    font-weight: bolder;
+}
+.btnEn{
+    width: auto;
+    text-align: center;
+    float: none;
+}

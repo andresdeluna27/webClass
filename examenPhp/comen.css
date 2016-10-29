@@ -1,0 +1,23 @@
+textarea{
+    margin-top: 3%;
+    max-height: 150px;
+    max-width: 70%;
+    min-height: 150px;
+    min-width: 70%;
+    display: inline-block;
+}
+.sectC{
+    margin-top: 50px;
+    margin-left: 15%;
+    width: 70%;
+    height: 300px;
+    display: inline-block;
+    background: green;
+    text-align: center;
+}
+.divInfo{
+    width: 50%;
+    float: left;
+    background: blue;
+    color: aliceblue;
+}

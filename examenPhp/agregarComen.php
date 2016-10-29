@@ -11,18 +11,18 @@
         }else{
              die("servidor no disponible: ".$conexion->connect_error);
         }
-	$usuario=$_POST['nuevoUser'];
-	$contrasenia=$_POST['contra'];
-	$nombre=$_POST['nombre'];
-	$correo=$_POST['correo'];
-	$inser=mysqli_query($conexion,"INSERT INTO usuarios VALUES('$usuario','$nombre','$contrasenia','$correo')");
+    session_start();
+	$usuario=$_SESSION['usuario'];
+	$texto=$_POST['texto'];
+	$id=$_SESSION['id'];
+	$inser=mysqli_query($conexion,"INSERT INTO comentarios VALUES('$id','hoy','ahora','$textot','$usuario')");
 	if($inser){
 		echo "inserta";
         session_start();
         $_SESSION['usuario']=$usuario;
-		header("location:index.php");
+		header("location:comentarios.php");
 	}else{
 		echo "no inserta";
-        header("location:nuevo.php");
+        header("location:comentarios.php");
 	}
 ?>
